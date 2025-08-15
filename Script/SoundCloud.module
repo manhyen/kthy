@@ -1,0 +1,7 @@
+#!name=SoundCloudGo+ | Khổng Mạnh Yên (yenver2)
+#!desc=SoundCloudGo + Please do not edit without permission. Thank you ❤️
+
+[Script]
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/kthy/refs/heads/main/Module/YenSoundCloud.js
+[MITM]
+hostname= %APPEND% api-mobile.soundcloud.com
