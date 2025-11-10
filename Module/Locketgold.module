@@ -1,0 +1,18 @@
+#!name=Locket Gold - Khổng Mạnh Yên
+#!desc=Mở khoá premium cho ứng dụng Locket Widget 
+# 💬 Web: https://beacons.ai/manhyen  
+# 🚀 Released by: Khổng Mạnh Yên  
+#!version= 8
+
+[General]
+user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
+
+[Script]
+
+# ~ Enhanced for Shadowrocket, Surge, & LanceX
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/locket.js, requires-body=true, max-size=-1, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/header.js, timeout=120
+
+[MITM]
+hostname = api.revenuecat.com, raw.githubusercontent.com
+# 👤 Author: Khổng Mạnh Yên  
