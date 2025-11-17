@@ -4,7 +4,7 @@
 [Script]
 
 # Fake Premium từ RevenueCat
-Locket_Gold = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), requires-body=true, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Locketfix.js
+Locket_Gold = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), requires-body=true, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Locket_Gold.js
 
 # Xoá header để tránh lỗi nhận dạng
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Yen_deleteheader.js
