@@ -1,6 +1,7 @@
 (function(){
   try{
-    const _0xexp = "32472144000000";
+    const _0xexp = "4083974400000"; // 15/03/2099
+
     let _0xobj = JSON.parse($response.body);
 
     _0xobj["data"] = {
@@ -19,16 +20,19 @@
       "derive_type": 1,
       "in_trial_period": false,
       "is_vip": true,
+
       "membership": {
         "id": "4",
         "display_name": "Wink会员",
         "level": 1,
         "level_name": "普通会员"
       },
+
       "active_promotion_status_list": [2],
       "sub_type": 2,
       "account_id": "1230010086",
       "valid_time": "1569664800000",
+
       "active_product_id": "0",
       "active_promotion_status": 2,
       "show_renew_flag": true
