@@ -1,21 +1,19 @@
-#!name = Locket Gold Premium
+#!name = 🐾 Locket Gold 💛
 #!desc = Module Locket Gold by Khổng Mạnh Yên — Đã Fix Lỗi
-#!author=ManhYen (Kthy)
-
-[Rule]
-# Chặn đúng API kiểm tra VIP
-DOMAIN,api.getlocket.com,REJECT
-DOMAIN-SUFFIX,subscription.getlocket.com,REJECT
-DOMAIN-SUFFIX,premium.getlocket.com,REJECT
-DOMAIN-SUFFIX,vip.getlocket.com,REJECT
+# Mở khoá Gold cho ứng dụng Locket Widget 
+#!author= Mạnh Yên (Kthy) 
+# 💬 Web: https://beacons.ai/manhyen  
+# 🚀 Tạo bởi: Khổng Mạnh Yên  
+#!version= 1
 
 [Script]
 
-# Fake Premium từ RevenueCat
+# 🚫 Xin Đừng chỉnh sửa bất cứ thứ j ở đây
 Locket_Gold = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), requires-body=true, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Locket_Gold.js
 
-# Xoá header để tránh lỗi nhận dạng
+# 🍃Module này mình tự tìm hiểu và lm ra xin đưng ăn cắp😮‍💨
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Yen_deleteheader.js
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, api.getlocket.com
+hostname = %APPEND% api.revenuecat.com
+#!author= Mạnh Yên (Kthy) 🍥
