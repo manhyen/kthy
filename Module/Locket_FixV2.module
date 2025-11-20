@@ -1,0 +1,14 @@
+#!name=Locket Gold AutoVPN
+#!desc=Tự bật VPN + giữ GOLD cho Locket trên Shadowrocket
+#!author=ManhYen (Kthy)
+
+[Rule]
+# Kích hoạt VPN tự động cho Locket
+PROCESS-NAME,com.getlocket.ios,REQUIRE-VPN
+
+[MITM]
+hostname = api.getlocket.com
+
+[Script]
+# Script trả GOLD
+url script-response-body https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Locket_Gold.js
