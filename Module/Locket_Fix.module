@@ -8,12 +8,11 @@
 
 [Script]
 
-# 🚫 Xin Đừng chỉnh sửa bất cứ thứ j ở đây
+//# 🚫 Xin Đừng chỉnh sửa bất cứ thứ j ở đây
 Locket_Gold = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), requires-body=true, max-size=-1, timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Locket_Gold.js
 
-# 🍃Module này mình tự tìm hiểu và lm ra xin đưng ăn cắp😮‍💨
+//# 🍃Module này mình tự tìm hiểu và lm ra xin đưng ăn cắp😮‍💨
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), timeout=60, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/Yen_deleteheader.js
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
-#!author= Mạnh Yên (Kthy) 🍥
