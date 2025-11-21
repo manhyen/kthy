@@ -1,4 +1,3 @@
-//#bởi KHỔNG MẠNH YÊN. 
 //# Mong bạn không chỉnh sửa hay chia sẻ lại nếu chưa có sự cho phép. Xin cảm ơn ❤️
 const mapping = {
   '%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip'],
