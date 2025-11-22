@@ -1,0 +1,14 @@
+#!name=🐾 Picsart Premium - Yên Simp Lỏ
+#!desc=Unlock Picsart Premium by KHỔNG MẠNH YÊN, Mở khóa Pro cho PicArt
+#!author= Mạnh Yên (Kthy) 
+# 💬 Web: https://beacons.ai/manhyen  
+# 🚀 Tạo bởi: Khổng Mạnh Yên  
+#!version=1.1
+
+[MITM]
+//# 🍃Module này mình tự tìm hiểu và lm ra xin đưng ăn cắp😮‍💨
+hostname = api.picsart.cases, subscription.picsart.com, api.picsart.com
+
+[Script]
+//# 🚫 Xin Đừng chỉnh sửa bất cứ thứ j ở đây
+http-response ^https:\/\/(api\.picsart\.com|subscription\.picsart\.com)\/.+\/subscriptions\/.+ requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/PicArt.js, tag=🐾 Picsart Premium
