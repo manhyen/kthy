@@ -25,7 +25,7 @@ objc = {
         "period": "1y",
         "label": null,
         "details": null,
-        "expires": 1741996800000,
+        "expires": 1773532800000,
         "valid": true,
         "linkStatus": "linked-current"
       }
