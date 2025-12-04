@@ -3,11 +3,11 @@
 # Mở khoá Gold cho ứng dụng Locket Widget 
 #!author= Mạnh Yên (Kthy) 
 # 💬 Web: https://beacons.ai/manhyen  
-# 🫆 Tạo bởi: Khổng Mạnh Yên  
+# 🫆 Tạo bởi: Khổng Mạnh Yên 🐥
 #!version= 2
 
 [General]
-user-agent = Locket/1.0.0 (iPhone; iPad; iOS 26; Scale/2.00)
+user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
 
 [Script]
 
