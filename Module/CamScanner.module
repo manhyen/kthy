@@ -1,0 +1,15 @@
+#!name = 🐾 CamScanner 🐣
+#!desc = Module CamScanner by Khổng Mạnh Yên 👑
+# Mở khoá Premium cho ứng dụng CamScanner 
+#!author= Mạnh Yên (Kthy) 
+# 💬 Web: https://beacons.ai/manhyen  
+# 🫆 Tạo bởi: Khổng Mạnh Yên 🐥
+#!version= 1
+
+[Mitm]
+hostname =%APPEND% ap*.intsig.net
+
+[Script]
+扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1, script-path=https://gitlab.com/yenno1/script/-/raw/main/CamScanner.js
+
+#!author= Mạnh Yên (Kthy)🙂‍↕️
