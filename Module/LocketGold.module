@@ -9,6 +9,15 @@
 [General]
 user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
 
+dns-server=1.1.1.1,1.0.0.1,8.8.8.8
+doh-server=https://1.1.1.1/dns-query,https://dns.google/dns-query
+ipv6=true
+network-framework=true
+http3=true
+udp-timeout=12
+connect-timeout=8
+read-timeout=15
+
 # =============================
 
 [Rule]
