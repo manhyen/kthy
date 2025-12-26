@@ -5,9 +5,27 @@
 # 💬 Web: https://beacons.ai/manhyen  
 # 🫆 Tạo bởi: Khổng Mạnh Yên 🐥
 #!version= 2
-
+# =============================
 [General]
 user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
+
+# =============================
+
+[Rule]
+DOMAIN-SUFFIX,locketcamera.com,DIRECT
+DOMAIN-SUFFIX,locketwidget.com,DIRECT
+DOMAIN-SUFFIX,locket.app,DIRECT
+DOMAIN-KEYWORD,locket,DIRECT
+
+DOMAIN-KEYWORD,analytics,REJECT
+DOMAIN-KEYWORD,log,REJECT
+DOMAIN-SUFFIX,app-measurement.com,REJECT
+DOMAIN-SUFFIX,google-analytics.com,REJECT
+DOMAIN-SUFFIX,firebaseinstallations.googleapis.com,REJECT
+
+DOMAIN-SUFFIX,localhost,DIRECT
+
+# =============================
 
 [Script]
 
@@ -15,6 +33,8 @@ user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
 //# 🚫 Xin Đừng chỉnh sửa bất cứ thứ j ở đây
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/locket.js, requires-body=true, max-size=-1, timeout=120
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/manhyen/kthy/refs/heads/main/Script/header.js, timeout=120
+
+# =============================
 
 [MITM]
 //# 🍃Module này mình tự tìm hiểu và lm ra xin đưng ăn cắp😮‍💨
