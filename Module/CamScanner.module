@@ -4,12 +4,23 @@
 #!author= Mạnh Yên (Kthy) 
 # 💬 Web: https://beacons.ai/manhyen  
 # 🫆 Tạo bởi: Khổng Mạnh Yên 🐥
+#!icon=https://static.camscanner.com/app/icon.png
 #!version= 1
 
-[Mitm]
-hostname =%APPEND% ap*.intsig.net
+# =============================
+
+[Rule]
+DOMAIN-SUFFIX,intsig.net,MITM
+DOMAIN-SUFFIX,camscanner.com,MITM
+# =============================
 
 [Script]
-扫描全能王=type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1, script-path=https://gitlab.com/yenno1/script/-/raw/main/CamScanner.js
+# CamScanner One Top by Yen
+Camscanner = type=http-response,pattern=https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_prop,requires-body=1,script-path=https://gitlab.com/yenonetop/script/-/raw/main/CamScanner.js
+# =============================
+
+[Mitm]
+hostname =%APPEND% ap*.intsig.net,api.intsig.net, api-cs.intsig.net
+
 
 #!author= Mạnh Yên (Kthy)🙂‍↕️
