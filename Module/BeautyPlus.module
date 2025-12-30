@@ -1,0 +1,16 @@
+#!name = 🐾 BeautyPlus 🐣
+#!desc = Module BeautyPlus by Khổng Mạnh Yên 👑
+# Mở khoá Premium cho ứng dụng BeautyPlus  
+#!author= Mạnh Yên (Kthy) 
+# 💬 Web: https://beacons.ai/manhyen  
+# 🫆 Tạo bởi: Khổng Mạnh Yên 🐥
+#!version= 1
+#!====================================
+
+[Script]
+BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/manual_unlock|newbeee-api\.beautyplus\.com\/api\/v1\/asset\/balance), script-path=https://gitlab.com/yenonetop/script/-/raw/main/BeautyPlus.js, requires-body=true, max-size=-1, timeout=60
+#!====================================
+[MITM]
+hostname = %APPEND% api.mr.pixocial.com, newbeee-api.beautyplus.comBeautyPlus
+
+#!author= Mạnh Yên (Kthy)😘
